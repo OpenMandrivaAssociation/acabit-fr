@@ -1,7 +1,7 @@
 %define base_name	acabit
 %define name		%{base_name}-fr
 %define version		4.3
-%define release		%mkrel 3
+%define release		%mkrel 5
 
 Name:		%{name}
 Version:	%{version}
