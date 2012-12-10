@@ -46,3 +46,43 @@ rm -rf %{buildroot}
 %{_bindir}/*
 %{_datadir}/%{name}
 
+
+
+%changelog
+* Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 1:4.3-8mdv2011.0
++ Revision: 616499
+- the mass rebuild of 2010.0 packages
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+
+* Tue Sep 01 2009 Thierry Vignaud <tv@mandriva.org> 1:4.3-6mdv2010.0
++ Revision: 423861
+- rebuild
+
+* Tue Jul 22 2008 Thierry Vignaud <tv@mandriva.org> 1:4.3-5mdv2009.0
++ Revision: 240409
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Sun Aug 19 2007 Guillaume Rousse <guillomovitch@mandriva.org> 1:4.3-3mdv2008.0
++ Revision: 67053
+- rebuild
+- import acabit-fr
+
+
+* Mon Jun 26 2006 Lenny Cartier <lenny@mandriva.com> 1:4.3-2mdv2007.0
+- requires locales-fr
+
+* Thu Jul 28 2005 Guillaume Rousse <guillomovitch@mandriva.org> 1:4.3-1mdk 
+- new version
+- split package in two distinct ones, as english and french version have different versions
+
+* Fri Jul 09 2004 Guillaume Rousse <guillomovitch@mandrake.org> 26112003-2mdk 
+- fixed spec perms
+
+* Tue Jun 15 2004 Guillaume Rousse <guillomovitch@mandrake.org> 26112003-1mdk 
+- first mdk release
