@@ -1,18 +1,13 @@
 %define base_name	acabit
-%define name		%{base_name}-fr
-%define version		4.3
-%define release		9
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
-Epoch:		1
+Name:		acabit-fr
+Version:	4.3
+Release:	10
 Summary:	Automatic Corpus-based Acquisition of Binary Terms
 License:	GPL
 Group:		Sciences/Computer science
-Source0:	http://www.sciences.univ-nantes.fr/info/perso/permanents/daille/%{base_name}_fr_v%{version}.tar.bz2
-Url:		http://www.sciences.univ-nantes.fr/info/perso/permanents/daille/acabit.html
-Buildroot:	%{_tmppath}/%{name}-%{version}
+Source0:	https://web.archive.org/web/20070226194754if_/http://www.sciences.univ-nantes.fr:80/info/perso/permanents/daille/acabit_fr_v%{version}.tar.gz
+Url:		https://web.archive.org/web/20090604095714/http://www.sciences.univ-nantes.fr/info/perso/permanents/daille/acabit.html
 BuildArch:	noarch
 Obsoletes:	%{base_name}
 provides:	%{base_name}
@@ -25,7 +20,7 @@ input, and returning an ordered list of candidates terms.
 This is the french version.
 
 %prep
-%setup -q -n %{base_name}_fr_03112004
+%autosetup -p1 -n %{base_name}_fr_03112004
 
 %build
 perl -pi -e 's|require \("lib/(.*)"\);|require ("%{_datadir}/%{name}/$1");|' */*.pl
